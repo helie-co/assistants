@@ -1,12 +1,13 @@
 import os
 import requests
 import urllib3
+import streamlit as st
 from dotenv import load_dotenv
 
 class GPTClient:
     def __init__(self, api_key: str = None, model: str = None):
         load_dotenv()
-        self.api_key = api_key or os.getenv("OPENAI_API_KEY")
+        self.api_key = api_key or os.getenv("OPENAI_API_KEY") or st.secrets["OPENAI_API_KEY"]
         if not self.api_key:
             raise ValueError("Veuillez définir OPENAI_API_KEY dans le fichier .env")
         self.model = model or os.getenv("OPENAI_MODEL", "gpt-4o")
