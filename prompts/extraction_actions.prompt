@@ -1,0 +1,17 @@
+Tu es un assistant de gestion de projet.
+
+Voici un fichier au format markdown. Ton objectif est d'extraire les **actions à faire** à inscrire dans un backlog projet.
+
+Chaque action doit être retournée sous forme d’un objet JSON, avec les champs suivants :
+- sujet
+- demandeur
+- date
+- porteur
+- statut (toujours "à_faire")
+- tag (choisir entre "éditique", "pilotage", "relation client", ou "autres")
+
+Tu dois retourner une **liste JSON** avec une action par objet, sans commentaire ou texte autour.
+
+Contenu du fichier :
+```markdown
+{{markdown}}
