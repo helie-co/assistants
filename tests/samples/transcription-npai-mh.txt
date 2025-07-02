@@ -1,0 +1,388 @@
+ATELIER NPAI  - June 11
+VIEW RECORDING - 58 mins (No highlights): https://fathom.video/share/R6i_acAzti8_pDNRo3jad_aSaJxBiVvs
+
+---
+
+0:00 - Mehdi CHAKOURI (Malakoff Humanis)
+  Salut tout le monde.
+
+0:06 - Badis BARKAT (Malakoff Humanis)
+  Bonjour à tous. Bonjour.
+
+0:35 - Rajah KERKENI (Malakoff Humanis)
+  Bonjour tout le monde. Bonjour tout le monde.
+
+0:39 - Laurent DEBIERRE (Malakoff Humanis)
+  Bonjour.
+
+0:51 - BALADI Vincent
+  Bonjour. Bonjour.
+
+2:01 - Badis BARKAT (Malakoff Humanis)
+  Salut. On reste le temps de tout le monde d'arriver.
+
+2:35 - Karim FILALI (Malakoff Humanis)
+  On reste le de on le temps tout on le de reste le tout
+
+4:00 - Badis BARKAT (Malakoff Humanis)
+  Thank you. Thank Donc, qui peut prendre la parole côté métier pour nous annoncer vos avancements ? C'est-à côté métier ?
+
+5:19 - Yannick URBAN (Malakoff Humanis)
+  Je me rappelle qu'au dernier point, vous n'étiez pas encore… Ah ! Clairement, globalement, aujourd'hui, avant de définir le côté métier, pour moi, il était nécessaire de définir ce qu'était capable de faire l'outil, déjà, pour qu puisse voir si déjà ça convient.  Je crois que la dernière fois, il manquait des intervenants, c'est pour ça qu'on a remporté un peu le sujet, mais globalement,'est ça l'idée.  Société Radio-Canada Numéro Merci. L'atelier NPI, on est bien d'accord, c'est un atelier NPI KELIA, et donc du coup l'objectif c'est de définir comment on va traiter les NPI dans KELIA, sachant qu'aujourd'hui, pour moi il n'existe rien, ou alors on m'a caché des choses, mais globalement, pour moi il existe juste apparemment le moyen d'intercepter les contrats, pour qu'ils n'aillent pas dans IAPRO, mais c'est tout, aujourd'hui il n'existe que ça.  Donc il faudrait peut-être déjà définir ce que fait déjà IAPRO, enfin deux KELIA dans IAPRO, et puis après voir un peu comment on peut avancer nous de notre côté par rapport à notre besoin, globalement, notre besoin, c'est-à-dire que si on vous dit voilà on veut ça, ça,-titrage  Ça, ça, puis vous nous dites, bah non, finalement, c'est pas possible. à fin, on avait réfléchi sur le fait d'imposer ou pas des informations supplémentaires pour, en fait, que les NPI, enfin, que les courriers qui arrivent NPI sur  en automatique, mais globalement, enfin, on n'a pas défini exactement comment on allait le faire, quoi.  Aujourd'hui, qu'est-ce qui existe chez les NPI par rapport à NPI ?
+
+7:36 - Rajah KERKENI (Malakoff Humanis)
+  Parce que je suppose qu'on n pas le seul groupe qui travaille avec les NPI, enfin, je sais pas.
+
+7:43 - Yannick URBAN (Malakoff Humanis)
+  Comment ils fonctionnent sur les NPI ?
+
+7:45 - Karim FILALI (Malakoff Humanis)
+  Alors, aujourd'hui, les NPI, ils sont au bout de chaîne, donc, ce qui se passe, c'est que, bah, les courriers, nous, on reçoit des flux, on compose, on envoie les courriers.  Et voilà.
+
+7:59 - Yannick URBAN (Malakoff Humanis)
+  Et voilà. Merci. Comment s'en traiter les NPI ? Ils retournent directement dans les sociétés ?
+
+8:05 - Karim FILALI (Malakoff Humanis)
+  Aujourd'hui, on ne traite pas, pour le moment, les NPI, on n'a pas d'informations, on n'a rien, on doit avoir quelque chose dans le flux d'informations qui nous indique que c'est des courriers NPI.  D'un autre côté, nous, on attend cette information. Donc la dernière fois, comme ça a été dit… Globalement, ça ne revient pas de nous.
+
+8:23 - Yannick URBAN (Malakoff Humanis)
+  Lorsqu'on envoie un courrier, lorsqu'il revient NPI, il ne revient pas de chez nous, il ne revient par la porte.
+
+8:30 - Karim FILALI (Malakoff Humanis)
+  En fait, un courrier… Alors juste pour que tout le monde comprenne, fait, quand la première fois qu'il y a, on envoie un flux chez Edigroup, nous, on reçoit un flux, on compose et on envoie par poste chez le client, ok ?  Un client qui n'habite pas… Alors, nous, on ne'envoie pas, Karim, attattattattattom.
+
+8:51 - Christophe DELAMETTE (Malakoff Humanis)
+  Ce n pas tout à fait la même mécanique. Edigroup, c'est un outil de composition. Donc on compose des documents et on l'envoie à la DTI pour qu'ils impriment et qu mettent, … …  PI. Donc, ils ont à la charge de mettre un data matrix pour dire si le PI ne revient pas, si le PI n'est pas adressé, il revient à la DQ.  C'est comme ça que ça marche. Et après, il y a la gestion qui dit, moi, je veux bien récupérer les PI et je suis en charge de modifier l'adresse si besoin.  C'est le cycle classique du PI non distribué. D'accord.
+
+9:30 - Yannick URBAN (Malakoff Humanis)
+  Et du coup,'est ça, globalement, lorsque ça revient, c'est traité, c-à que ça passe dans le flux GED, on est bien d'accord ?  Ou pas ?
+
+9:41 - Christophe DELAMETTE (Malakoff Humanis)
+  Tout courrier composé va en GED, qu'il soit NPI ou pas. On n'a pas d'informations côté des groupes et on n'a pas à l'avoir.
+
+9:51 - Yannick URBAN (Malakoff Humanis)
+  D'accord. Très bien. donc, du coup, l'année dernière fois, on a évoqué le sujet, en fait, quand un pli était NPI.'est'est ça, ça.  NPI, et qu'il arrivait en LVED, l'idée c'était de savoir si on avait la possibilité de le toper directement dans l'enquête LIA, ou pas.  C'était en fait ça l'idée générale, enfin si je ne me trompe pas, Rajah, c'est un peu l'idée générale, c'est que globalement, en fait, là, aujourd'hui, on a très peu de contrats dans'enquête LIA et qui part via les 10 groupes, mais globalement, à terme, on aura aux alentours de 300 à 400 000 contrats.  Donc, 400 000 contrats, on va dire, sur les 400 000 contrats, on a à peu près entre 6 et 10% de NPI, c'est ce que je précisais l'année dernière fois.  Donc, c'est-à-dire que globalement, on va avoir entre 24 000 et puis 30 000, enfin, on entend entre 24 000 NPI, on va dire.  Donc, l'objectif, bien évidemment, à terme, c'est qu'on ait une possibilité que, via ce retour NPI, je ne sais pas comment, je ne pas par quel moyen, je ne sais pas, enfin, mais...  Clairement, je ne pas si vous connaissez le coût de topper NPI manuellement sur 24 000 individus, mais c'est un coût énorme.  Donc le ROI, il est assez rapidement fait. On va dire que'est à peu près 3 minutes dans Keila pour topper un dossier NPI.  En moyenne, si on a un peu de dextérité. Et encore, si on fait ça toute la journée, je suppose qu'à la fin de la journée, ce n plus 3 minutes, mais on a les yeux qui se croisent.  Donc vous imaginez que 24 000 NPI, ça représente une charge énorme en gestion. Et ça va représenter aussi une charge énorme en gelade, alors qu'on vient numériser des trucs qui vont être très manuellement.  Donc l'idée, ce serait plutôt de se dire, plutôt que de charger en gelade des choses qui n'ont aucune utilité, et qui en fait ont une utilité, parce que clairement, si on le gère manuellement, ils vont avoir une utilité.  Mais si par la suite, on trouve une solution... ... ... ... Merci. technique qui permet de toper l'outil NPI, enfin par rapport à la typologie du NPI, parce que globalement on avait aussi un Fath identifié que selon la typologie du NPI, c'était pas forcément des cas, c'était pas forcément toujours le même chemin, mais 3 minutes fois 24 000, je fais pas le calcul, mais c'est 72 000 minutes, en termes de gestion,'est, enfin, je sais pas quand ça, combien ça représente deux jours, mais c'est, je faire le calcul, mais je peux le faire tout de suite si vous voulez.  On avait cru comprendre qu'il y avait une coche automatique qui pouvait se faire, y avait un truc en auto sur qu'il y qui pouvait se faire pour les NPI.
+
+12:51 - Rajah KERKENI (Malakoff Humanis)
+  Alors, bonjour à tous, par rapport au dernier atelier, ce qui a été dit, c'est que dans un premier temps, effectivement, on ne pourrait pas…
+
+13:00 - Ludivine COULBAULT (Malakoff Humanis)
+  Donc, automatiser cette gestion NPAI dans l'outil de gestion qu'il y a. Ou alors, si on le fait, ça risque de cocher NPAI potentiellement des adresses tiers qui, pourtant, ont été mises à jour.  Voilà. L'idée, c'est qu'entre le moment où un courrier est édité et qu'il revient en NPAI, il peut se passer du temps.  Et donc, entre-temps, l'adresse du tiers a potentiellement été mis à jour dans son cycle de vie, mis à jour des données clients.  Exact. C'est ce qui avait été dit et c'est ce qui faisait que pour le moment,'était compliqué, enfin voilà, c'était pas possible de faire topper automatiquement NPAI dans l'outil gestion qu'il y a.  Donc, Je suis en train de me remettre les choses en tête. Ce qu'on avait dit, c'est qu'il y aurait un process manuel dans un premier temps, avec potentiellement une numérisation, donc du pli pour intégration dans la chaîne RadLAD, BMC, Joachim.  Je suis en train de relire mes notes. Courrier NPAI qui serait tracé dans Joachim dans une corbeille dédiée. Je pas vous dire de bêtises, parce que c'est des notes que j'ai prises, ça.  Il faudrait un tag NPAI quelque part, pour potentiellement ne pas remettre en GED le document. Il y avait plusieurs pistes de gérer.  Qu'est-ce en charge des demandes par la gestion, afin de mettre annuellement le top NPAI dans l'outil qu'il y a ?  Mais bon, par rapport à ce que tu dis, Yannick, s'il y a effectivement 24 000 NPAI, ça a Ça va générer beaucoup de demandes, ça me paraît un peu fou.  Là, ça présente 171 jours de travail, on dire. Oui, ça me paraît un peu fou. Donc, il faut voir, après, il y avait potentiellement aussi de pouvoir récupérer un fichier Excel, des NPAI, mais il faut voir comment aujourd'hui il est réalisé pour peut-être l'intégrer dans l'outil Kelia pour mettre à jour le top.  Mais voilà, tu as le risque de modifier des adresses qui, entre-temps, ont été mises à jour. C'est ça, c'est une grosse difficulté qu'on va rencontrer.  Après, ça,'était… il n'existe pas. Justement, aujourd'hui, dans le Kelia, il n'existe pas un script qui, en fait, dirait, tiens, j'intègre un fichier.
+
+15:48 - Yannick URBAN (Malakoff Humanis)
+  Si l'adresse est différente de celle dans le fichier, globalement, il ne toque pas une paye. C'est ça, en fait, l'idée… Oui, il faudrait pouvoir mettre un script comme ça, avec un contrôle des dates.
+
+16:00 - Ludivine COULBAULT (Malakoff Humanis)
+  des dates de mise à jour, c'est-à-dire de contrôler la date du retour NPAI avec la date de mise à jour du tiers, mais je ne sais pas si c'est faisable, il faut checker.  Ça,'était entre guillemets la solution à mettre en place dans un lot 1, enfin dans un lot 0, c'est-dire un process manuel, une solution dégradée, et dans un lot 1, de voir comment on peut effectivement automatiser ce process pour que la mise à jour du tag NPAI soit faite en automatique dans KELIA avec les contrôles nécessaires pour ne pas disqualifier une adresse qui a été mise à jour après édition du courrier.  Voilà, donc il y a effectivement plusieurs travaux, il y a une solution dégradée, si on peut mettre en place une solution dégradée, en attendant de pouvoir automatiser cette mise à jour dans KELIA.  Après, derrière, ça c'était la mise à jour d'Ankelia et il avait le sujet, ensuite, une fois qu'on a une adresse qui est au PNPI, de ne pas renvoyer les courriers, mais de seulement les mettre en GED, si jamais il un nouveau courrier généré.  Et là, j'avais cru comprendre qu'il y avait un projet en cours avec Mehdi pour générer des courriers qui seraient regroupés dans des lots, par exemple un lot France, un lot étranger, un lot NPI.  Et que du coup, en faisant un lot spécifique NPI, ça permettait de ne pas l'envoyer à ID Group.
+
+17:36 - Yannick URBAN (Malakoff Humanis)
+  Je vais préciser aussi qu'il y avait aussi une possibilité d'un lot sans adresse, globalement qui n pas de lot NPI, mais ça peut arriver, un dossier qui pas d'adresse.  C'est un peu la problématique qu'on a avec la DSN,'est que des fois, en fait, l'information n'est pas précisée. Donc du coup, ça nous arrive d'affiler des gens sans leurs adresses.
+
+18:00 - Ludivine COULBAULT (Malakoff Humanis)
+  Merci.
+
+18:00 - Yannick URBAN (Malakoff Humanis)
+  Il ne faut pas plus oublier ce nom-là et la seconde adresse. Donc intercepter, sans adresse et NPI, étranger et France.
+
+18:11 - Ludivine COULBAULT (Malakoff Humanis)
+  Donc ça c'était le résumé de mes notes de la dernière fois. Sauf qu'effectivement, sur le sujet, il n'y a pas eu d'avancement parce que d'autres sujets qui ont été demandés à être sécurisés en priorité avant, comme les solutions à mettre en place dans le cadre de l'admigration du 3270 et de l'accostage de bosses dans Joachan.  Et donc effectivement, sur le NPI, je n'ai pas, voilà, pour moi de mon côté, en tout cas, je n'ai pas du tout avancé encore sur le sujet.  Moi voilà où j'en suis.
+
+18:52 - Yannick URBAN (Malakoff Humanis)
+  Justement la question en fait à Edi Group, en fait Edi Group ne fait que constituer en fait des lots de fichiers qui sont imprimés.  Eh bien, d'accord. Et donc, du coup, vous n'y imposez rien de particulier parce que globalement, c'est des groupes. Globalement, vous n'y imposez pas un code barre ou une information qui pourrait en fait traiter un retour via fichier, etc.  Ça,'est post-composition, c'est après au moment de la mise sous pli.
+
+19:27 - Christophe DELAMETTE (Malakoff Humanis)
+  Donc ça, c'est le côté DETI. Il y a un data matrix qui donne différents éléments, l'identifiant, etc. Quand ça revient en NPI, pour pouvoir l'exploiter.  En l'occurrence, la RADLAD. D'accord.
+
+19:46 - Ludivine COULBAULT (Malakoff Humanis)
+  Est-ce que sur ce data matrix qui est mis par la DETI, il y a une date d'envoi, certainement, j'imagine, ou pas ?  Sur notre data matrix de CEPA. Alors, moment de la mise sous pli, moi, je ne sais pas comment ça se passe.
+
+20:00 - Marie SOUHIARD
+  Au niveau de la DETI, s'ils utilisent des étiquettes similaires à ce qu'on utilise au moment de la numérisation, il y a forcément une date.  Je ne sais pas ce qu'ils utilisent pour la mise sous pli, pour l'envoi des courriers, je ne sais pas du tout comment fonctionne la DETI.  C'est ça, vous ne parlez pas du retour de la numérisation lorsque le pli nous est retourné, quand parle de mise sous pli, c'est bien au moment de l'envoi.
+
+20:30 - Ludivine COULBAULT (Malakoff Humanis)
+  Donc, on a une action, c'est déjà d'essayer de comprendre qu'est-ce qui est posé sur les enveloppes qu'il est posé ce Data Matrix lors de l'envoi, c'est ça ?
+
+20:41 - Christophe DELAMETTE (Malakoff Humanis)
+  Non, c'est la fenêtre expéditeur, c'est au-dessus de l'adresse, c'est un Data Matrix qui est imposé, par-dessus. Et en fait, il est visible sur la fenêtre transparente, là, de l'enveloppe.
+
+21:09 - Ludivine COULBAULT (Malakoff Humanis)
+  Mais du coup, par exemple, Edigroup, aujourd'hui, j'ai les cartes de Terpéant, si je ne trompe pas.
+
+21:21 - Yannick URBAN (Malakoff Humanis)
+  Alors, on fait la composition, c'est toujours pareil, toujours la même histoire, mais on n'imprime pas. D'accord, c'est la technique imprime, c'est que globalement, dans la composition, vous mettez un data matrix, parce que je pense que les retours NPI, les cartes de Terpéant, ne les traitez pas mal.  Voilà, les cartes de Terpéant,'est géré par un autre nationnier, qui est Prozema. Ah d'accord,'est pas la DICOMP, c'est-à ?  Non, c'est pas la DICOMP, Non, c'est-à ? Pardon ? C'est pas la DICOMP, pour le coup, non. Du coup, aujourd'hui, aujourd'hui, clairement, on passe par la DETI, parce que c'est une solution...  Alternative ou on va continuer, en fait,'est avec la DETI qui va continuer à imprimer ? Parce que globalement, quand on va commencer à envoyer des bulletins de situation, c'est pareil, on va avoir du volume, on ne pas'est cible la DETI.  La DETI, c'est cible, on a des imprimantes qui sont liées à ça. D'accord, donc on n'externalise pas, et dans le milieu de possible, essaie de ne pas externaliser.  D'accord, mais imprimer par exemple 50 000 BS, parce qu'on a des produits où il y a 50 000 BS ou à 7 feuilles, donc ça, ça peut se faire assez rapidement, c'est ça que vous êtes en train de me dire, globalement ?  Oui, c'est du commun.
+
+22:44 - Christophe DELAMETTE (Malakoff Humanis)
+  D'accord, c'est du commun. Ok, moi c'était juste pour savoir un peu, en termes de volumétrique, où on en était.  Parce que là, par exemple, pense'est le bulletin de situation, c'est bulletin de situation, c'est tous les jours que tu en envoies 50 000 ou c'est une fois...  non. C'est annuel, non, c'est une campagne annuelle, donc là, les campagnes annuelles, on en a tout le temps, au final.
+
+23:07 - Yannick URBAN (Malakoff Humanis)
+  Parce que là, globalement, enfin, si je parle de 50 000, on a des loups 100 000 aussi, enfin, 000 fois cette page, d'accord, ok, donc ça, ok, donc si on passe par l'ADETI, globalement, il y a quelqu'un de'ADETI, là, aujourd'hui ?  Non.
+
+23:24 - Christophe DELAMETTE (Malakoff Humanis)
+  Et justement, il manque, justement, quelqu'un de l'ADETI pour répondre à toutes vos questions, finalement.
+
+23:29 - Marie SOUHIARD
+  Ouais, parce que là, il faut absolument qu'on ait l'information, de savoir, en fait, ce qu sont capables de faire, quoi.
+
+23:35 - Yannick URBAN (Malakoff Humanis)
+  Parce que l'idée, c'est de l'envoyer, et puis pas de traiter les retours, globalement, c'est d'ailleurs que globalement, enfin, il manque quelque c'est une consigne, c'est une consigne à leur passer, parce que si vous leur dites, moi, les NPI, j'en fais rien, bah, ils les mettront à la poubelle, hein, c'est pas un problème.  Ah oui, non, non, bien évidemment. C'est comme ça que ça marche. Parce que si vous, tous les ans, vous envoyez un 4.000 PS, NPI, pour tous les ans, il y en a de plus  De plus, au bout d'un moment, vous allez voir, avec 50 000 NPI sur 400 000, et puis ils ne seront pas traités.  Globalement, il a un traitement derrière qui est fait, les NPI. Le but du jeu, c'est de traiter les NPI, et on est bien d'accord.  En épargne, on est quand même assez suivi par la CPR, justement, pour le suivi des adresses des assurés, lorsqu'en fait, ils sont NPI.  C-à que globalement, on a un engagement, comme vous le savez, les fonds qui sont gérés par Malakoff Organis, en fait, si, en fait, lorsque la personne a un certain âge, les fonds retournent à l'État, quoi.  Donc, du coup, l'idée, c'est de rechercher au maximum les adresses des gens NPI. Donc, si on met les NPI à la poubelle, forcément, ils ne pas topés NPI, et globalement, on ne va pas rechercher une nouvelle adresse.  Ça, c'est normal, mais pour moi, c'est une action manuelle, non ?
+
+24:56 - Christophe DELAMETTE (Malakoff Humanis)
+  Manuel, oui, par principe, je dirais oui.
+
+24:59 - Yannick URBAN (Malakoff Humanis)
+  Merci. Merci. Maintenant, il faut savoir que c'est à peu près, on dire, un ETP, quoi, pour traiter du NPI, quoi, c'est-à que la personne va faire ça toute l'année, quoi.  C'est 161 jours pour 24 000 NPI, et encore, je suis just, en disant 24 000, ça sera certainement plus, donc, ça va vous embaucher quelqu'un qui va faire de la saisie, enfin, de retour de NPI pendant un an, quoi.
+
+25:26 - Christophe DELAMETTE (Malakoff Humanis)
+  Oui, je ne pas, je ne pas, mais de toute façon, c'est-à-dire que si vous ne voulez pas envoyer de NPI, enfin, de courrier pour tous ceux qui sont topés NPI, pour moi, y quand même un souci.
+
+25:37 - Yannick URBAN (Malakoff Humanis)
+  Ah oui, mais là, c'est un autre souci, là, c un autre problème par rapport aux lots qui sont, qui sont, aux lots actuels qui sont confectionnés, et sur le fait, ça,'est, je pense qu'il y eu une évolution, globalement, ne peut pas, on ne peut pas envoyer des courriers NPI, et bien évidemment, je ne sais pas si Karim pourra nous confirmer, mais aujourd'hui, je crois que, bah, aujourd'hui,  Oui, en a, mais globalement, je ne sais pas comment ils vont traiter, mais c'est-à-dire qu'à terme, il faudra trouver une solution, qu'il y une solution qui s'ende.  Parce que la génération de KELIA, globalement, il faudra qu'il y un long NPI, ça c'est une certitude. De toute façon, il y a deux sujets.
+
+26:23 - Ludivine COULBAULT (Malakoff Humanis)
+  Le premier, c'est comment on met à jour les adresses dans KELIA, comment on les top NPI. Il eu en automatique.  le deuxième sujet, c'est comment on gère le non-envoi de ces courriers qui vont être générés, tout en les mettant comme en GED.  C'est-à-dire qu y a quand même un sujet à faire après sur la partie d'envoi. Oui, je confirme.
+
+26:53 - Karim FILALI (Malakoff Humanis)
+  Oui, donc c'est-à-dire qu'il faut qu'on compose les courriers et on les injecte, on jette.
+
+26:59 - Christophe DELAMETTE (Malakoff Humanis)
+  C'est bon. Mais ne sont pas envoyés.
+
+27:03 - Ludivine COULBAULT (Malakoff Humanis)
+  C'est ça. Pour moi, c'est ça, le besoin. Après, voilà, donc il a mise à jour automatiquement des NPAI dans KELIA et ensuite, le fait de ne pas les envoyer, mais quand même de les mettre en GED.  Et après, il y a quand même un troisième sujet, ou ce sujet, je ne sais pas, c'est est-ce qu'il faut instruire les NPAI dans des demandes, Joachin, pour qu'un gestionnaire puisse aller les traiter, ou pas ?  Ça dépend de ce que va nous dire l'ADETI, globalement.
+
+27:38 - Yannick URBAN (Malakoff Humanis)
+  C'est-à-dire que si l'ADETI, s'il y a un QR code, je prends l'exemple, il un QR code, ce QR code, en fait, est identifié au retour, je ne sais pas comment, et qu'en fait, grâce à ce retour-là, ça constitue des fichiers Excel.  Globalement, je ne vois pas, en fait, je ne vois pas l'intérêt de... de numériser quelque chose, pour moi, dans un fichier Excel.  Non, ça n'a pas d'intérêt.
+
+28:06 - Ludivine COULBAULT (Malakoff Humanis)
+  C'est là, en fait, le problème. Pour moi, ça va générer beaucoup trop de demandes. En plus, ça veut dire que pour vous, en termes de gestion, tu parlais d'un ETP pour traiter NPAI.  C'est-à-dire que quand bien même tu mets quelque chose en automatique, si tu as des demandes derrière dans Jouachin qu'il faut traiter, ça va te faire encore un besoin d'un bonhomme pour ne serait-ce traiter toutes les demandes.  Parce que 24 000 NPAI, ça fait beaucoup. Mais quand je dis 24 000 NPAI, ce n pas les seuls.
+
+28:33 - Yannick URBAN (Malakoff Humanis)
+  Globalement, on reçoit aussi, par exemple, globalement, avec chaque bulletin de situation, après, ça sera via l'essence client, mais aujourd'hui, on a ce qu'on appelle un document qui permet aux assurés de changer d'adresse parce que forcément, ce'est pas forcément tous NPAI, puisqu'ils font des fois des transferts d'adresse.  Donc, ils spécifient via un document de retour. Par exemple, ceux-là, on en a déjà 1 000, par exemple. Donc, 1 000 retours de documents, en fait.  Donc ce n pas des NPI, mais c'est en fait, on a un retour de clients qui nous disent, voilà, j'ai changé d'adresse, tatata, tatata, et ça, ça doit bien aller dans la GED, ou dans le H1, enfin, je ne pas comment, mais...  Je voulais juste intervenir. Bonjour, bonjour, Vincent, je représente Médicis, Emmanuel et Sandy aussi.
+
+29:19 - BALADI Vincent
+  Je voulais vous dire, oui, vous en êtes tous d'accord, pour moi, il y a déjà deux types d'NPI. Il y a les NPI, je dirais, unitaires, c'est-à qu'on envoie un courrier où il n pas forcément de data matrix ou autre courrier livre, on reçoit un retour, et en général, c'est un retour manuel avec un autocollant de la poste.  Enfin, en tout cas, nous, c'est ce qu'on a sur notre produit actuel, et une NPI, c'est n'habite pas à l'adresse indiquée, pas le nom sur la boîte aux lettres, tout est indiqué, et le motif est indiqué.  Et aussi, il y des fausses NPI, je pense, à l'été, où on peut avoir, effectivement, beaucoup plus de NPI qu'à d'autres périodes.  Donc ça, je dirais, c'est les NPI, mais ça représente, effectivement, une faible bolimétrie. Ensuite, On a les NPAI de masse, et là, je rejoins totalement ce qu'a dit Yannick, sur tout ce qu'on appelle nous les actes majeurs, les envois, là, effectivement, c'est un envoi de masse avec un code barre, un data matrix, tout ce qu'on veut, en tout cas, quelque chose qui est topé au niveau de notre routeur, de celui qui imprime, qui façonne, automatiquement, nous, après, on reçoit un fichier Excel avec, effectivement, les NPAI sur la masse qui a été envoyée.  Voilà ce qu'il fait. En tout cas, nous, la cible, c'est ce qu fait aujourd'hui sur notre produit actuel, et c'est ce qu'on veut.  Et puis, ce n pas traitable au niveau, manuellement, d'avoir des retours comme ça, d'un coup, de 2 milliers de NPAI.  Oui.
+
+30:48 - Ludivine COULBAULT (Malakoff Humanis)
+  Juste le fichier Excel, le fichier Excel que vous recevez, la cote M16, vous le recevez sur combien de temps par rapport à un envoi de masse derrière le fichier Excel qui vous est renvoyé
+
+31:01 - BALADI Vincent
+  C'est Excel, c'est CSV ou autre, et c'est intégré directement dans notre outil de gestion, voilà, via la base Oracle, je crois, enfin, je parle de notre outil de gestion actuel, mais en tout cas, c'est intégré directement dans notre SI, et on a l'info après via des extractions, que c'est NPAI, et par exemple, je donne un exemple concret, parce qu'on n'a pas parlé, mais 95% de nos clients ont une adresse mail, ce qu'on fait,'est qu'on envoie un publipostage automatique, par mail à nos adhérents, disant, votre adresse a été topée NPAI, merci de nous indiquer si vous avez changé d'adresse postale, par exemple.  Ça, c'est une action concrète, et ça génère des retours, et on se rend compte aussi, avec leur retour, que ça peut être des fausses NPAI, ou parce qu'on n'avait pas indiqué une ligne, ou parce qu'il y un changement de numérotation, il y a plein de bonnes raisons.  Mais je suis d'accord avec Yannick, il faut qu'on ait déjà ce qu'il est possible de faire dans l'outil aujourd'hui, parce que je ne pas dans Elia, je ne pas où on peut toper, voilà, dans Elia, cette info.  Ah si, apparemment on peut, je vais toper cette info dans Elia, apparemment.
+
+32:24 - Yannick URBAN (Malakoff Humanis)
+  Oui, on peut la toper, il y a une coche, on met à peu près 3 minutes par dossier.
+
+32:30 - BALADI Vincent
+  D'accord, et puis si on va plus loin dans l'espace adhérent, dans le MPE, est-ce qu'on ne pourrait pas avoir une, enfin je réfléchis toujours, une pop-up ou quelque chose, disant attention votre adresse est NPI, merci de la modifier.  En tout cas d'avoir une info, comme on a des infos, par exemple, moi je vois sur mes dossiers, j'ai des infos d'hérence pour des adhérents qui ont juste dépassé.  Et l'âge de départ à la retraite qu'ils ont indiqué à l'adhésion. J'ai eu une info avec attention, déshérence, etc.  Alors qu'il n aucune déshérence. Est-ce qu'on ne pourrait pas aussi avoir cette info ?
+
+33:11 - Ludivine COULBAULT (Malakoff Humanis)
+  Il existe effectivement que ce soit relié dans l'espace MPE, mais tout ça, il y vraiment un sujet global à étudier.  Moi, dans ce que j'entends, c'est qu'effectivement, il y aurait deux process, comme tu dis, Vincent, les NPAI unitaires, c'est ça, où là, il a pas de DM, n pas tout ça, c des petites volumétries, donc ça, serait du traitement manuel, effectivement.  Et les NPAI de masse, où là, lors de l'envoi, il y a un DM qui serait apposé par l'ADETI.  Et il faut donc mettre en place un process permettant de répertorier les NPAI en automatique dans l'outil Kelia. Oui.  Et après, de pouvoir faire des extraits. de ces courriers en NPSI pour la gestion. Bah oui, ça aurait des chances.  Et si on veut aller plus loin, de voir si on ne peut pas en plus faire en sorte que cette info remonte dans MPE.  Bon, ça,'est du plus. Après, on pourra vérifier les process en plus entre nous, mais c'est des idées comme ça.
+
+34:23 - BALADI Vincent
+  Et puis après, j'ajouterais aussi sur le point qui a été évoqué tout à l'heure, sur est-ce qu'on envoie, est-ce qu'on n'envoie pas.
+  ACTION ITEM: Compile list of regulatory requirements for sending NPAI mail to share w/ solution design team
+ - WATCH: https://fathom.video/share/R6i_acAzti8_pDNRo3jad_aSaJxBiVvs?timestamp=2064.9999  Par exemple, tout à l'heure, Yannick parlait à l'État, effectivement, on verse à la Caisse dépôt et consignation, ensuite à l'État.  Les courriers, même quand ils sont NPSI, on doit les envoyer pour avoir la preuve de l'envoi à la dernière adresse connue.  Donc, juridiquement aussi, il faut être en lien avec le juridique pour bien valider ce qu'on envoie ou pas en adresse indiquée NPSI.  Parce'il y des courriers qu'on doit envoyer quand même. Il y a des courriers, je te rejoins, qui doivent être quoi qu'il arrive en GED.  Parce que par exemple, l'adhérent à NPAI, il faut que tu retrouves tout de suite son dernier... Les relevés annuels de situation et que tu lui justifies que tu lui as envoyé.  Donc, il faut que tu l'aies quelque part pour lui envoyer. Donc, il faut qu'il soit en jède.
+
+35:12 - Ludivine COULBAULT (Malakoff Humanis)
+  Oui, non, c'est ça. Il y a effectivement des courriers où il y a du réglementaire qui s'y appose. Une OP commerciale, par exemple, admettons, une OP commerciale, il est exclu.
+  ACTION ITEM: Organize workshop w/ DETI team re NPAI handling capabilities, data matrix usage, CSV returns
+ - WATCH: https://fathom.video/share/R6i_acAzti8_pDNRo3jad_aSaJxBiVvs?timestamp=2123.9999
+
+35:24 - BALADI Vincent
+  Mais par contre, les informations annuelles, tout ça, il est inclus dedans pour moi.
+
+35:34 - Ludivine COULBAULT (Malakoff Humanis)
+  Je pense que sur les prochaines étapes, là, il faut qu'on fasse un atelier avec la DETI. Déjà, savoir ce qui est possible de faire.  Et un atelier, donc, avec Kélia, les personnes de Kélia, pour, enfin, dans tous les cas, pour connaître les possibilités, les possibilités de...  Je crois qu'il y avait également l'architecture qui avait étudié le sujet. Il me semble qu'on en a parlé au dernier comop, si je ne dis pas de bêtises, ce qui était, et qu'on devait refaire le point avec l'architecture aussi sur les sujets, sur ce sujet.  En tout cas, voilà, on n'est pas encore au clair sur ce qui est faisable aujourd'hui. On n'est pas encore au clair.
+
+36:49 - Karim FILALI (Malakoff Humanis)
+  Est-ce qu'il ne pas aussi intégrer quelqu'un de Capia pour, comme vous avez dit, il faut voir qu'est-ce que l'outil...
+
+36:58 - Ludivine COULBAULT (Malakoff Humanis)
+  Capia,'est... Et c'est KELIA, c'est ça ? C'est KELIA, oui. Oui,'est ça, oui. Oui, bah, dans tous les cas, oui, c'est ça, il faut qu'on dise quelqu'un de KELIA, c'est effectivement des personnes qui connaissent bien l'outil.  Oui, tout à fait. Je pense que c'est un architecte, non ? Oui, c'est ça, c'est ça, l'architecte, oui, il faut intégrer l'architecture dans le lot, parce que ça fait, et je sais qu'il devait faire, je sais que, enfin, il y a eu des actions, je crois qu'il y eu des supports, des études faites par Laurent Carle sur cette partie-là, donc il faut qu'on recoupe sur le sujet.  Comme je vous l'ai dit, depuis le dernier atelier,'est un sujet que, enfin, moi, personnellement, je n'ai pas pu gérer, parce que, bah, j'ai pas pu, voilà.  Donc, il va falloir qu'on se remette en ordre de marche sur cette partie-là. Mais c'est pour ça que depuis un mois, il n'y pas eu d'avance.  Deux S-E-I Comme ça se prononce, quoi ? Oui, je pense. Ah ouais, c'est compliqué, je pense.
+
+39:09 - Yannick URBAN (Malakoff Humanis)
+  Il faudra peut-être des réponses.
+
+39:13 - Christophe DELAMETTE (Malakoff Humanis)
+  Il y peut-être justement des réponses concernant le retour du routeur pour les NPI, parce qu'il y peut aussi un retour possible sous format CSV et autres.  Voir dématérialiser. D'accord. Ok. Bah oui, il faut voir tout ça, quoi.
+
+39:37 - Yannick URBAN (Malakoff Humanis)
+  Parce que globalement, aujourd'hui, on ne sait pas, quoi. On n'a pas d'infos, quoi. Est-ce que c'est dans la composition de IAPRO ?  Apparemment, non. Je pense que vous n'ajoutez pas de QR code sur les… Mise à part le QR code qui se trouve en bas de page, au-dessus de l'adresse, vous ne mettez pas de QR code aujourd'hui.  description description de la la description de Karim, on est bien d'accord. Donc, s'il un QR code qu'est mis, c'est via la DETI, quoi.  Ça dépend.
+
+40:07 - Christophe DELAMETTE (Malakoff Humanis)
+  Si. Ah. Ça dépend.
+
+40:09 - Karim FILALI (Malakoff Humanis)
+  Alors, le petit data matrix qui est posé sur le courrier, sur la fenêtre, c'est le DETI. En revanche, nous, on pose notre data matrix, il est assez gros, on bat à gauche de chaque verso, pardon, de chaque recto du courrier.  Donc,'est un data matrix qui contient le numéro de contrat, le code courrier. Ah oui, mais ça,'est le code courrier.
+
+40:35 - Yannick URBAN (Malakoff Humanis)
+  Il faut ouvrir l'enveloppe, ça, pour... Mais il est hors fenêtre. Oui, ça n'a pas d'intérêt pour la gestion des courriers non distribués.  Non. Donc, s'il a un QR code qui est indiqué dans la fenêtre, comment il est identifié en retour ?  Je ne pas. C'est DETI, c'est peut-être pas forcément avec un prénom que tu voulais le courrier.
+
+40:59 - Ludivine COULBAULT (Malakoff Humanis)
+  Je ne
+
+41:00 - Yannick URBAN (Malakoff Humanis)
+  Non, non, je ne sais pas. C'est ça qu'il faut savoir. Je pense qu'il faut absolument déjà déterminer comment sont traités l'envoi des courriers et ce qu'il y a dessus qui est possible d'identifier pour qu'on puisse avoir une information sur ce point-là déjà dans un premier temps.  Donc, il faut qu'on aura cette information-là, on pourra se dire, bah tiens, je ne pas, peut-être que comme on le dit tout à l'heure, peut-être qu'il un fichier qui revient à CSV, je ne sais pas exactement comment.
+
+41:41 - BALADI Vincent
+  Nous, je sais par exemple, dans notre produit actuel, qu'on n'a pas de code et autres et que c'est le routeur qui appose son propre code, il y un contrat avec la poste, donc il faut voir ça aussi en bout de chaîne.  Oui, c'est exactement ça.
+  ACTION ITEM: Schedule meeting w/ KELIA/Capia team + Laurent Carle (architect) to discuss NPAI integration possibilities
+ - WATCH: https://fathom.video/share/R6i_acAzti8_pDNRo3jad_aSaJxBiVvs?timestamp=2543.9999
+
+42:25 - Ludivine COULBAULT (Malakoff Humanis)
+  Sous-titrage Société Radio-Canada Qu'est-ce qu'il faut se dire ?
+
+42:31 - Karim FILALI (Malakoff Humanis)
+  Peut-être un autre point ?
+  ACTION ITEM: Compile findings from DETI & KELIA workshops, prep trajectory proposal for business team re NPAI handling
+ - WATCH: https://fathom.video/share/R6i_acAzti8_pDNRo3jad_aSaJxBiVvs?timestamp=2552.9999
+
+42:34 - Ludivine COULBAULT (Malakoff Humanis)
+  Il faut qu'on organise un atelier avec la DETI, il faut qu'on organise un atelier avec Kélia, Capia, etc. Et puis tout ça en lien avec Laurent Carle, l'architecte, pour qu'on puisse se proposer au métier la trajectoire sur ce sujet.  Parce qu'à voir,-ce qu'on va directement… Merci sur une solution cible,-ce qu'on peut trouver une solution dégradée ? Il faut qu'on propose tout ça au métier, mais on ne pourra rien proposer tant qu'on n'aura pas fait le point déjà avec les différents acteurs.
+
+43:15 - Yannick URBAN (Malakoff Humanis)
+  La solution dégradée du fichier Excel en intégration dans KELIA, pour moi, ce n pas forcément une solution dégradée. On est bien d'accord sur le principe où, globalement, ça peut être peut-être une solution cible également.  L'idée, c'est de ne pas avoir à saisir, on a gagné au moins, et donc l'intégration fichier, ça fait mal.  Après, est-ce que ça existe déjà ? Aujourd'hui, non.
+
+43:46 - Ludivine COULBAULT (Malakoff Humanis)
+  Est-ce qu'ils sont capables de proposer quelque chose ou pas ?
+
+43:53 - Yannick URBAN (Malakoff Humanis)
+  Une fois qu'on a la formation du CSV avec la date d'envoi, le nom, prénom, le numéro de contrat, contrat,  Typologie du NPI, je pense que derrière il est possible d'avoir en fait une intégration qui va traiter seulement ceux pour lesquels globalement il faut cocher la cloche NPI et ceux, je pense qu'il faudra aussi ne pas oublier ceux par exemple, ou par exemple l'assuré n pas venu chercher le courrier parce qu'il n pas envie, qui n pas forcément le même traitement que si il n'habite pas l'adresse l'adresse qu'on a oublier le courrier parce que selon la typologie du retour il peut y avoir des cas un petit peu à la marge où il faudra bien évidemment pas tout mettre dans le même lot je sais qu'aujourd'hui il y a via en fait l'espace client il y a des informations qui redescendent en fait on on  qui viennent en fait indiquer une information dans le dossier qui est là, où le gestionnaire doit venir traiter le dossier parce que globalement, il a quelque chose à faire.  Donc ça peut être une solution aussi.
+
+45:23 - Ludivine COULBAULT (Malakoff Humanis)
+  Ouais. Ok.
+
+45:33 - Yannick URBAN (Malakoff Humanis)
+  Même si je comprends que c'est pas forcément la meilleure solution, mais je suis pas sûr qu'on puisse faire passer de la radlade à Kélia, quoi.
+
+45:44 - Ludivine COULBAULT (Malakoff Humanis)
+  Ou je me trompe.
+  ACTION ITEM: Investigate w/ DETI possibility of sorting incoming mail, video-coding NPAI items for potential RADLAD->KELIA solution
+ - WATCH: https://fathom.video/share/R6i_acAzti8_pDNRo3jad_aSaJxBiVvs?timestamp=2749.9999
+
+45:50 - Yannick URBAN (Malakoff Humanis)
+  Aujourd'hui, cette solution qu'on avait évoquée, directement de la radlade vers Kélia, c'est une solution envisageable ou pas du tout ?-titrage
+
+46:00 - Marie SOUHIARD
+  Ça dépend de la DETI, parce qu'il va falloir leur demander de procéder à un tri du courrier à l'arrivée.  Ensuite, il va falloir vidéotyper les plis en tant que NPAI. va falloir quand même passer en vidéocodage. Ça va être une charge côté DETI, si on pense à cette solution.  Donc, de toute façon, il faudra en parler avec eux. D'accord.
+
+46:22 - Yannick URBAN (Malakoff Humanis)
+  OK. Pas de souci. On en parlera avec eux à ce moment-là, lorsqu'il y aura un problème.
+
+46:44 - Karim FILALI (Malakoff Humanis)
+  Je pense qu'on a fait le tour, pense. Non ? Parce qu'il y autre chose.
+
+46:50 - Yannick URBAN (Malakoff Humanis)
+  Karim, toi, de ton côté, par rapport au NPAI aujourd'hui, globalement, je sais que vous ne recevez que deux lots, un lot étranger, un lot en France.  On est bien d'accord, c'est bien ça ? Oui. Oui. D'accord. OK. Ça marche. C'est juste déjà pour savoir ce que vous avez déjà, ce qui arrive déjà chez vous et ce qui n'arrive pas.  Donc les lots, enfin tout ce qui est NPI, c'est peut-être dans ces lots-là aussi, non ? Ou pas du tout ?  Potentiellement, potentiellement, mais on n'a aucune information aujourd'hui qui nous indique que c'est NPI ou non.
+
+47:19 - Karim FILALI (Malakoff Humanis)
+  D'accord. OK. D'où les propos de Christophe. Donc aujourd'hui, on reçoit, on compose et on l'envoie chez DETI.
+
+47:28 - Yannick URBAN (Malakoff Humanis)
+  D'accord. OK. Du coup, ce qui veut dire qu'il faut quand même travailler avec les équipes de Kélia pour qu'aujourd'hui, au lieu d'avoir deux lots, on en ait un petit peu plus.  C'est bien ça. L'idée.
+
+47:39 - Karim FILALI (Malakoff Humanis)
+  Oui, il y un lot à part qui indique que c'est… Alors je ne pas si c un lot, en tout cas une information dans le flux qui indique que c'est un NPI.  D'accord.
+
+47:55 - Yannick URBAN (Malakoff Humanis)
+  Ça marche. Merci, Kélien. Merci. Merci. Merci.
+
+47:59 - Karim FILALI (Malakoff Humanis)
+  Merci. Merci. Merci. Après, de l'autre côté, on peut voir si on a une information dans le flux. Alors, nous, quand c'est, parce que moi, j'entends que le souhait, c'est que de ne pas envoyer le courrier chez le client, mais juste l'intégrer en GED.  Donc, on a des fonctionnalités qui permettent, quand on reçoit un flux, on sait que ce flux, il doit être juste injecté en GED et ne pas produire le flux qui va pour l'impression.  Donc, dans ce cas-là, si on a une information dans le flux, on peut juste soit qu'il fait d'une façon à alimenter, on a des balises qui disent est-ce que c'est GED, est-ce que c'est impression ou c'est un mail, il doit mettre cette information dans cette trois balises, ou bien il y une autre solution, que l'ETL, il peut intervenir pour faire la combinaison, pour que ça rentre dans le moule chez nous.  Nous, les fonctions sont déjà mis en place. On sait gérer, dès qu'on a l'information, sait gérer, pour l'injection au jet, de toute façon, on voit par poste.  D'accord.
+
+49:07 - Christophe DELAMETTE (Malakoff Humanis)
+  Il y a encore une autre solution, parce que par expérience sur d'autres applications, le nom du site, côté DETI, ils lisent le nom, ils se basent sur le nom du site, qu'on leur envoie, pardon, pour impression.  Donc, ils savent que si c'est du paraméticisme, et puis du broca, ou je ne pas quoi, on a pris une autre manière.  Donc, on peut bien imaginer que si c'est un NPI, on peut très bien passer via, soit un traitement qu'il y a, soit le DETI, en disant, je renomme le nom du fichier, je regroupe l'ensemble des NPI, et dans le nom du fichier, j'appelle EditNom, ou NPI AI, ou une information, qui permet de véhiculer l'information jusqu'à Compart, donc c'est le logiciel qui est en charge de...  de faire après l'impression, et de dire, moi, quand j'ai une NPAI indiquée dans ce nom du fichier, je ne fais que mettre en jade, et je n'imprime pas.
+
+50:10 - Yannick URBAN (Malakoff Humanis)
+  Ça, ça serait génial. Je le déjà pour Playgat, par exemple. Ce serait top, ça. Juste une information supplémentaire à rajouter lors de la transmission du fichier, c'est ça.  Oui, tout à fait, tout à fait, parce qu'on fait à l'image de cette fonctionnalité, on traite aussi des courriers confidentiels.
+
+50:28 - Karim FILALI (Malakoff Humanis)
+  Donc, on a rajouté cette information de confidentialité dans le nom du flux, on le gère de telle façon. Donc, comme part, ils sont capables d'identifier les courriers, soit confidentiels, soit NPAI, soit ainsi de suite.  C'est ça.
+
+50:42 - Christophe DELAMETTE (Malakoff Humanis)
+  Ok. Mais là, je ne suis pas sûre d'avoir suivi.
+
+50:47 - Ludivine COULBAULT (Malakoff Humanis)
+  est-ce qui rajouterait l'information dans le flux ?
+
+50:50 - Yannick URBAN (Malakoff Humanis)
+  Kélia. Kélia, oui, c'est ça.
+
+50:54 - Ludivine COULBAULT (Malakoff Humanis)
+  Alors, Kélia, général, il renomme. Je vais l'expliquer. Kélia, en général, ils ont.
+
+51:00 - Karim FILALI (Malakoff Humanis)
+  Et on voit juste un seul flux qui regroupe tous les courriers, peu importe l'assureur. En fait, c l'ETL qui intervient pour dispatcher et dispatcher le flux en petit lot par assureur et par soit les courriers vont être interceptés dans l'IA Pro ou pas.  Donc, normalement, c'est l'ETL qui va intervenir. Parce que qu'il y l'envoie un seul flux qui est nommé toujours le même nom standard et il ne change pas de nom.  Donc,'est l'ETL qui le... C'est ça, tout à fait.
+
+51:38 - Christophe DELAMETTE (Malakoff Humanis)
+  C'est le flux global. J'ai suivi, j'ai suivi.
+  ACTION ITEM: Check w/ ETL team (Mehdi) re possibility of adding NPAI flag to file names for DETI processing
+ - WATCH: https://fathom.video/share/R6i_acAzti8_pDNRo3jad_aSaJxBiVvs?timestamp=3102.9999
+
+51:42 - Karim FILALI (Malakoff Humanis)
+  Et l'ETL, qu'est-ce qui porte l'ETL ? Nous avons notre expert et notre ami Midi Chakoui, alors il s'est absenté.  Ah oui, d'accord, c midi.
+
+51:53 - Ludivine COULBAULT (Malakoff Humanis)
+  Donc, Midi, il peut faire l'affaire.
+
+51:58 - Karim FILALI (Malakoff Humanis)
+  Je suis posé... Côté Pierre, Mehdi.
+
+52:05 - Ludivine COULBAULT (Malakoff Humanis)
+  Oui, c'est le sujet dont je parlais à un moment, la dernière fois, avaient parlé du fait qu'ils avaient un sujet en cours où ils essayaient de faire différents lots, France, étrangers, et potentiellement d'essayer d'avoir un lot spécifique pour les NPAI.  C'est possible, je n'étais pas invité dans cette discussion. Non, non, on en avait parlé la dernière fois, et que de ce fait, s'il y a un lot spécifique NPAI, il sera déjà isolé quelque part avec le fait que ce lot-là, faut le mettre en jet, par contre, il ne pas l'imprimer envoyé, par exemple.  C'est ça. Ouais. De notre côté, les groupes, il y a pas mal de solutions qu'on peut proposer.
+
+52:52 - Karim FILALI (Malakoff Humanis)
+  Après, faut d'abord étudier le sujet en amont, et voir avec des architectes, quelles sont les solutions qu'il faut mettre en place.
+
+52:59 - Ludivine COULBAULT (Malakoff Humanis)
+  oui, Oui, de toute façon, on est obligé de passer par là. faut qu'on passe ses ateliers avant de pouvoir revenir vers le métier.  Oui, il y a une histoire de côté.
+
+53:17 - Christophe DELAMETTE (Malakoff Humanis)
+  Certains employés qui devront quand même partir, malgré tout. Oui, pour la partie réglementaire, c'est ça, ceux qui sont… Oui, tout à fait, oui.
+
+53:27 - Ludivine COULBAULT (Malakoff Humanis)
+  Oui, y a un… Il y des ranges juridiques. Oui.
+
+53:35 - Christophe DELAMETTE (Malakoff Humanis)
+  Et oui, tout à fait,'est un instrument.
+
+53:40 - Yannick URBAN (Malakoff Humanis)
+  Bon, on ne pas s'ennuyer, quoi. Tout à fait. Je trouve qu'on ne s'ennuie déjà pas trop, mais bon. Non, mais je suis d'accord.  Je suis d'accord. Moi aussi. On est tous'accord, on est tous d'accord, le bateau.
+
+53:55 - Ludivine COULBAULT (Malakoff Humanis)
+  Au revoir. Merci. Très bien. Franchement, je ne saurais pas vous donner de date pour l'instant en termes de quand est-ce qu'on pourra instruire et présenter une solution, mais on va essayer de faire des ateliers assez rapidement, courant loin, pour avancer.
+
+54:25 - Yannick URBAN (Malakoff Humanis)
+  Alors nous, si jamais en fait ça pouvait avancer, je ne pas non plus rapidement, mais globalement, si ça pouvait être un sujet qui pouvait être traité, enfin, qui pouvait être mis en place pour la fin d'année ou début d'année prochaine, pour que lorsqu'on va commencer à envoyer des bulletins de situation ou des appels de côte en masse, puisque là, comme vous le savez, sur Kélia, on va avoir des migrations assez importantes en 2026, donc ça serait plutôt agréable pour vous.  Sans mettre trop la pression, je veux dire,'est que globalement, là aujourd'hui, on sait que les buts de la situation vont partir là, celle de la semaine prochaine, donc du coup, on fait un pas sur ça, mais globalement, si ça pouvait être mis en place pour les envoies de base de l'année prochaine, début de 2026, ça serait top, quoi.  Je ne pas ce que, je ne pas ce que, je sais pas pas pense, mais ce serait pas mal, quoi.
+
+55:36 - BALADI Vincent
+  Oui, nous, c'est pareil, oui, nous,'est pareil, bien sûr, pour les envois d'actes majeurs, on se joint sur ça, bien évidemment.
+
+55:45 - Ludivine COULBAULT (Malakoff Humanis)
+  Oui, ça, ce sera déterminé, la faisabilité et les plannings en fonction des travaux qu'il y à faire. Là,'est vrai que'est difficile à dire si c'est possible ou pas, parce que pour le coup, il y a plusieurs en plus.  acteurs, donc il faudra qu gère ça. Mais c'est noté que l'objectif, ce serait de répondre à ce besoin pour début d'année 2026, à voir si on arrive à gérer ça pour cette échéance.  Ce sera top. Bah ouais, ce sera top, mais... Le problème, c'est qu'il l'échéance de janvier 2026, il y un sacré taquet de trucs, quoi.  Donc, derrière, c'est la CAF, quoi, c'est de réussir à tout gérer en même temps, clairement, c'est pas évident, c'est pas évident.  Je comprends.
+
+56:39 - Yannick URBAN (Malakoff Humanis)
+  Surtout que, comme vous le savez, il y a la migration 3270, quoi, donc... Bah c'est ça, non, et puis il n a pas que ça, il n pas que le 3270.
+
+56:46 - Ludivine COULBAULT (Malakoff Humanis)
+  T'as le 3270, tu dois... Alors oui, effectivement, il n pas de migration de boss dans Kélia, mais malgré tout, il y a des travaux à faire quand même sur le sujet.  Il y a les sujets MPE. qui arrivent aussi pour ces échéances. Il y a quand même un petit paquet de projets à mener en parallèle.  Céline Thiberty m'a parlé de projets sur les mails secondaires. Je ne sais pas si ça te parle, Yannick, mais il y a plein de mini… Il y a quand même un sacré paquet de sujets à traiter en parallèle et la difficulté, elle est là.  C'est que si tous ces sujets sont traités par les mêmes personnes, ça devient compliqué pour ces personnes. Je confirme.
+
+57:38 - Yannick URBAN (Malakoff Humanis)
+  Mais oui, je sais bien que tu entends bien ce sujet.
+
+57:42 - Ludivine COULBAULT (Malakoff Humanis)
+  Je pense qu'on en est tous un peu au même point. C'est clair. Voilà.
+
+57:50 - Yannick URBAN (Malakoff Humanis)
+  Ok, ok. Merci en tout cas. Ok, merci.
+
+57:54 - Karim FILALI (Malakoff Humanis)
+  Ok, merci. Bonne fin de journée.
+
+57:57 - Ludivine COULBAULT (Malakoff Humanis)
+  Au revoir. Merci à vous.
+
+57:59 - BALADI Vincent
+  Bonne fin de journée. Bon courage.
+
+58:01 - Badis BARKAT (Malakoff Humanis)
+  Merci.
