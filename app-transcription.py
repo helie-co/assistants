@@ -79,8 +79,8 @@ def split_and_transcribe(openai_client: OpenAI, file_path: str, segment_ms: int,
 
 
 # ---------- Streamlit UI ----------
-st.set_page_config(page_title="Transcription audio/vidéo (Whisper)", layout="centered")
-st.title("🎙️ Transcription audio/vidéo (OpenAI Whisper)")
+st.set_page_config(page_title="Transcription", layout="centered")
+st.title("🎙️ Transcription")
 
 # Lecture stricte depuis st.secrets (cloud/local)
 API_KEY = st.secrets.get("OPENAI_API_KEY", "")
@@ -92,7 +92,7 @@ if not API_KEY:
     )
     st.stop()
 
-with st.expander("⚙️ Paramètres", expanded=True):
+with st.expander("⚙️ Paramètres", expanded=False):
     language = st.selectbox("Langue à forcer (améliore la précision)", ["fr", "en", "es", "de", "it"], index=0)
     seg_minutes = st.slider("Taille des segments (minutes)", min_value=3, max_value=15, value=10, step=1)
 
