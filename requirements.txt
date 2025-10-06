@@ -4,3 +4,4 @@ python-dotenv
 PyPDF2
 docx2txt
 pydub>=0.25
+audioop-lts>=0.2
