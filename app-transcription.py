@@ -1,165 +1,166 @@
 # app-transcription.py
 import os
-import tempfile
-import sys
+import io
+import time
+from pathlib import Path
 from datetime import timedelta
 
 import streamlit as st
-from pydub import AudioSegment
 from openai import OpenAI
+from openai import APIConnectionError, RateLimitError, APITimeoutError, BadRequestError, APIStatusError
 
-# (Optionnel) compat avec un GPTClient local si présent
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-try:
-    from clients.gpt_client import GPTClient  # noqa: F401
-except Exception:
-    GPTClient = None
+# ---------------------- Config UI ----------------------
+st.set_page_config(page_title="Transcription (Whisper) — Sans FFmpeg", layout="centered")
+st.title("🎙️ Transcription audio/vidéo (OpenAI Whisper) — mode sans FFmpeg")
 
-SUPPORTED_FORMATS = [".mp3", ".mp4", ".wav", ".m4a"]  # volontairement sans .mkv
-
-# ---------- Utils ----------
-def format_ms(ms: int) -> str:
-    """Retourne mm:ss.mmm pour l'UI."""
-    return str(timedelta(milliseconds=ms))[:-3]
-
-
-def transcribe_segment(openai_client: OpenAI, segment_path: str, language: str) -> str:
-    with open(segment_path, "rb") as f:
-        resp = openai_client.audio.transcriptions.create(
-            model="whisper-1",
-            file=f,
-            language=language,
-        )
-    return getattr(resp, "text", "")
-
-
-def split_and_transcribe(openai_client: OpenAI, file_path: str, segment_ms: int, language: str, progress_cb=None):
-    ext = os.path.splitext(file_path)[1].lower()
-    if ext not in SUPPORTED_FORMATS:
-        raise ValueError(f"Format non supporté: {ext}. Autorisés: {', '.join(SUPPORTED_FORMATS)}")
-
-    # 1) Conversion éventuelle -> mp3
-    temp_mp3_path = None
-    if ext != ".mp3":
-        audio = AudioSegment.from_file(file_path, format=ext[1:])
-        with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as tmp_mp3:
-            audio.export(tmp_mp3.name, format="mp3")
-            mp3_path = tmp_mp3.name
-            temp_mp3_path = mp3_path
-    else:
-        mp3_path = file_path
-
-    # 2) Découpage
-    audio_mp3 = AudioSegment.from_mp3(mp3_path)
-    total_ms = len(audio_mp3)
-    segments_text = []
-    n_segments = (total_ms + segment_ms - 1) // segment_ms
-
-    for i, start in enumerate(range(0, total_ms, segment_ms), start=1):
-        end = min(start + segment_ms, total_ms)
-        seg = audio_mp3[start:end]
-
-        with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as tmp_seg:
-            seg.export(tmp_seg.name, format="mp3")
-            seg_path = tmp_seg.name
-
-        try:
-            text = transcribe_segment(openai_client, seg_path, language=language)
-            segments_text.append(text)
-        finally:
-            try:
-                os.unlink(seg_path)
-            except Exception:
-                pass
-
-        if progress_cb:
-            progress_cb(i, n_segments, start, end, total_ms)
-
-    return " ".join(segments_text).strip(), temp_mp3_path
-
-
-# ---------- Streamlit UI ----------
-st.set_page_config(page_title="Transcription", layout="centered")
-st.title("🎙️ Transcription")
-
-# Lecture stricte depuis st.secrets (cloud/local)
 API_KEY = st.secrets.get("OPENAI_API_KEY", "")
 if not API_KEY:
     st.error(
         "Aucune clé OpenAI détectée. Ajoutez-la dans `.streamlit/secrets.toml` (local) "
-        "ou dans **Settings → Secrets** sur streamlit.app :\n\n"
+        "ou dans **Manage app → Settings → Secrets** sur streamlit.app :\n\n"
         "```\nOPENAI_API_KEY = \"sk-...\"\n```"
     )
     st.stop()
 
-with st.expander("⚙️ Paramètres", expanded=False):
-    language = st.selectbox("Langue à forcer (améliore la précision)", ["fr", "en", "es", "de", "it"], index=0)
-    seg_minutes = st.slider("Taille des segments (minutes)", min_value=3, max_value=15, value=10, step=1)
+SUPPORTED_EXT = [".mp3", ".mp4", ".wav", ".m4a"]  # pas de conversion/découpage côté serveur
+
+# ---------------------- Utils ----------------------
+def fmt_bytes(num: int) -> str:
+    for unit in ["B", "KB", "MB", "GB"]:
+        if num < 1024.0:
+            return f"{num:.2f} {unit}"
+        num /= 1024.0
+    return f"{num:.2f} TB"
+
+def fmt_time_ms(ms: float) -> str:
+    return str(timedelta(milliseconds=int(ms)))
+
+def safe_name(name: str) -> str:
+    try:
+        return name.encode("utf-8", "ignore").decode("utf-8")
+    except Exception:
+        return "fichier"
+
+# Buffer de logs
+if "log_text" not in st.session_state:
+    st.session_state["log_text"] = ""
+
+# Un seul placeholder pour les logs (pas de widget à état)
+log_placeholder = st.empty()
+
+def append_log(msg: str):
+    """Ajoute une ligne au journal d'exécution et rafraîchit l'affichage."""
+    st.session_state["log_text"] += (("\n" if st.session_state["log_text"] else "") + msg)
+    # Affichage via st.code: pas de gestion d'état de widget, pas d'ID dupliqués
+    log_placeholder.code(st.session_state["log_text"], language="text")
+
+# ---------------------- UI paramètres ----------------------
+with st.expander("⚙️ Paramètres", expanded=True):
+    language = st.selectbox("Langue à forcer (meilleure précision)", ["fr", "en", "es", "de", "it"], index=0)
+    request_timeout = st.slider("Timeout requête (secondes)", min_value=30, max_value=300, value=90, step=10)
+    verbose_debug = st.toggle("Mode verbeux (debug)", value=False, help="Affiche la trace complète des erreurs")
 
 uploaded = st.file_uploader(
-    "Déposez un fichier audio/vidéo (mp3, mp4, wav, m4a)", type=["mp3", "mp4", "wav", "m4a"]
+    "Déposez un fichier audio/vidéo (mp3, mp4, wav, m4a) — 200 Mo max sur streamlit.app",
+    type=[ext[1:] for ext in SUPPORTED_EXT]
 )
 
-placeholder_log = st.empty()
+# Affiche le journal initial (vide ou existant)
+log_placeholder.code(st.session_state["log_text"] or "Journal d’exécution…", language="text")
 
+# ---------------------- Action ----------------------
 if uploaded is not None:
-    st.write(f"**Fichier** : `{uploaded.name}` — **Taille** : {uploaded.size/1024/1024:.2f} Mo")
+    fname = safe_name(uploaded.name)
+    fsize = len(uploaded.getbuffer())
+    fext = Path(fname).suffix.lower()
+
+    st.write(f"**Fichier** : `{fname}` — **Taille** : {fmt_bytes(fsize)}")
+    if fext not in SUPPORTED_EXT:
+        st.error(f"Format non supporté : {fext}. Formats acceptés : {', '.join(SUPPORTED_EXT)}")
+        st.stop()
+
     if st.button("🚀 Lancer la transcription", type="primary"):
-        # Sauvegarde du fichier uploadé
-        with tempfile.NamedTemporaryFile(delete=False, suffix=os.path.splitext(uploaded.name)[1]) as tmp_in:
-            tmp_in.write(uploaded.getbuffer())
-            tmp_in_path = tmp_in.name
+        client = OpenAI(api_key=API_KEY, timeout=request_timeout)  # timeout global
 
-        client = OpenAI(api_key=API_KEY)
-        seg_ms = seg_minutes * 60 * 1000
+        start_ts = time.time()
+        append_log("Démarrage de la transcription (mode direct, sans conversion ni découpage)…")
 
-        prog = st.progress(0, text="Préparation…")
-        log_lines = []
+        # On lit en BytesIO pour passer un file-like au client
+        file_like = io.BytesIO(uploaded.getbuffer())
+        file_like.name = fname  # utile pour l'API côté serveur
 
-        def on_progress(i, n, start, end, total):
-            pct = int(i / n * 100)
-            prog.progress(pct, text=f"Segment {i}/{n} — {format_ms(start)} ⟶ {format_ms(end)} / {format_ms(total)}")
-            log_lines.append(f"✓ Segment {i}/{n} : {format_ms(start)} - {format_ms(end)}")
-            placeholder_log.code("\n".join(log_lines), language="text")
-
-        temp_mp3 = None
-        try:
-            st.info("Transcription en cours…")
-            full_text, temp_mp3 = split_and_transcribe(
-                client, tmp_in_path, seg_ms, language=language, progress_cb=on_progress
-            )
-
-            prog.progress(100, text="Assemblage du texte…")
-            st.success("Transcription terminée ✅")
-
-            st.subheader("📝 Résultat")
-            if full_text:
-                st.text_area("Transcription (aperçu)", value=full_text, height=300)
-                txt_name = f"{os.path.splitext(uploaded.name)[0]}.txt"
-                st.download_button(
-                    "💾 Télécharger le .txt",
-                    data=full_text.encode("utf-8"),
-                    file_name=txt_name,
-                    mime="text/plain",
+        with st.status("Transcription en cours…", expanded=True) as status:
+            try:
+                st.write("➡️ Envoi du fichier à Whisper (appel API)…")
+                t0 = time.time()
+                resp = client.audio.transcriptions.create(
+                    model="whisper-1",
+                    file=file_like,
+                    language=language,
+                    # prompt=None,
+                    # temperature=0,
                 )
-            else:
-                st.warning("Aucun texte renvoyé par le modèle.")
-        except Exception as e:
-            st.error(f"Erreur pendant la transcription : {e}")
-        finally:
-            for p in (tmp_in_path, temp_mp3):
-                if p:
-                    try:
-                        os.unlink(p)
-                    except Exception:
-                        pass
+                t_api = time.time() - t0
+                append_log(f"Appel API terminé en {t_api:.1f}s.")
 
-with st.expander("❓ Notes & conseils"):
-    st.markdown(
-        """
-- **Formats supportés** : `.mp3`, `.mp4`, `.wav`, `.m4a` (les `.mkv` ne sont **pas** gérés ici).
-- **Segmentation** : 10 min par défaut (réglable 3–15 min).
-- **Audio backend** : `pydub` nécessite **ffmpeg** (sur *streamlit.app*, ajoutez `ffmpeg` dans `packages.txt`).
-- **Clé OpenAI** : lue **uniquement** via `st.secrets["OPENAI_API_KEY"]` (local ou cloud).
-        """
-    )
+                text = getattr(resp, "text", "").strip() if resp else ""
+                if not text:
+                    append_log("⚠️ Whisper a renvoyé une réponse vide.")
+                    st.warning("Aucun texte renvoyé par le modèle.")
+                else:
+                    append_log(f"✅ Transcription reçue ({len(text)} caractères).")
+
+                status.update(label="Fini", state="complete")
+
+            except (APITimeoutError, APIConnectionError) as net_err:
+                append_log("❌ Erreur de réseau / timeout avec l’API OpenAI.")
+                if verbose_debug:
+                    st.exception(net_err)
+                else:
+                    st.error(f"Erreur réseau/timeout : {net_err}")
+                text = ""
+            except RateLimitError as rle:
+                append_log("❌ Rate limit atteint (trop de requêtes).")
+                if verbose_debug:
+                    st.exception(rle)
+                else:
+                    st.error("Rate limit atteint. Réessaie dans quelques instants.")
+                text = ""
+            except BadRequestError as bre:
+                append_log("❌ Requête invalide (BadRequestError) — souvent un problème de taille/format.")
+                if verbose_debug:
+                    st.exception(bre)
+                else:
+                    st.error(f"BadRequest : {bre}")
+                text = ""
+            except APIStatusError as ase:
+                append_log(f"❌ Erreur serveur OpenAI (status {ase.status_code}).")
+                if verbose_debug:
+                    st.exception(ase)
+                else:
+                    st.error(f"Erreur OpenAI : status {ase.status_code}")
+                text = ""
+            except Exception as e:
+                append_log("❌ Exception non gérée pendant la transcription.")
+                if verbose_debug:
+                    st.exception(e)
+                else:
+                    st.error(f"Erreur : {e}")
+                text = ""
+
+        total_s = time.time() - start_ts
+        append_log(f"Durée totale du traitement : {fmt_time_ms(total_s * 1000)}")
+
+        st.subheader("📝 Résultat")
+        if text:
+            st.text_area("Transcription (aperçu)", value=text, height=300, key="result_area", disabled=False)
+            out_name = f"{Path(fname).stem}.txt"
+            st.download_button("💾 Télécharger le .txt", data=text.encode("utf-8"), file_name=out_name, mime="text/plain")
+        else:
+            st.info(
+                "Pas de transcription.\n\n"
+                "💡 Pistes sans FFmpeg :\n"
+                "- Réduire la taille/durée du fichier (couper localement en parties < 20–30 min).\n"
+                "- Essayer un format **WAV mono 16 kHz** (si ton outil d’enregistrement le permet).\n"
+                "- Exécuter l’application **en local** (aucune limite d’upload Streamlit Cloud) puis pousser le .txt."
+            )
